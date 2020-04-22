@@ -1,6 +1,6 @@
 class RoomController < ApplicationController
   before_action :set_room, except: [:index, :new, :create]
-  before_action :authenticate_user!, except [:show]
+  before_action :authenticate_user!, except: [:show]
 
   def index
     @rooms = current_user.rooms
@@ -15,7 +15,7 @@ class RoomController < ApplicationController
     if @room.save
       redirect_to listing_room_path(@room), notice: "Saved..."
     else
-      render 'new', notice: "Something went wrong..."
+      render :new, notice: "Something went wrong..."
     end
   end
 
