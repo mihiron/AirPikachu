@@ -3,6 +3,8 @@ class Room < ApplicationRecord
   has_many :photos
   has_many :reservations
 
+  has_many :guest_reviews
+
   geocoded_by :address
   after_validation :geocode, if: :address_changed?
 
@@ -18,5 +20,9 @@ class Room < ApplicationRecord
     else
       "blank.png"
     end
+  end
+
+  def avarage_rating
+    guest_reviews.count == 0 ? 0 : guest_reviews.avarate(:star).round(2).to_i
   end
 end
