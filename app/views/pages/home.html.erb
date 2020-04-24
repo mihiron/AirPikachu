@@ -1,3 +1,9 @@
+<div class="row">
+    <div class="col-md-7 banner">
+        <h1><span class="text-red">AirPikachu</span> Book unique homes and experience a city like a local.</h1>
+    </div>
+</div>
+
 <%= form_tag search_path, method: :get do %>
     <div class="row">
         <div class="col-md-6">
@@ -38,6 +44,33 @@
             </div>
         </div>
     <% end %>
+</div>
+
+<!-- Cities -->
+<div><h3>Cities</h3></div>
+<br/>
+
+<div class="row">
+    <div class="col-md-3 col-sm-12">
+        <a href="http://localhost:3000/search?utf8=%E2%9C%93&search=Tokyo">
+            <div class="discovery-card" style="background-image: url(/assets/tokyo.jpg);"></div>
+        </a>
+    </div>
+    <div class="col-md-3 col-sm-12">
+        <a href="http://localhost:3000/search?utf8=%E2%9C%93&search=Osaka">
+            <div class="discovery-card" style="background-image: url(/assets/osaka.jpg);"></div>
+        </a>
+    </div>
+    <div class="col-md-3 col-sm-12">
+        <a href="http://localhost:3000/search?utf8=%E2%9C%93&search=Nagoya">
+            <div class="discovery-card" style="background-image: url(/assets/nagoya.jpg);"></div>
+        </a>
+    </div>
+    <div class="col-md-3 col-sm-12">
+        <a href="http://localhost:3000/search?utf8=%E2%9C%93&search=Sapporo">
+            <div class="discovery-card" style="background-image: url(/assets/sapporo.jpg);"></div>
+        </a>
+    </div>
 </div>
 
 <script>

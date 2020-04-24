@@ -16,8 +16,11 @@ a {
 .text-babu, .icon-babu {
     color: #00a699;
 }
+.text-red, .icon-red {
+    color: #ff5a5f;
+}
 
-// navbars
+// Navbars
 .navbar-default {
     background-color: #ffffff;
 }
@@ -27,7 +30,7 @@ a {
     font-weight: 400;
 }
 
-// buttons
+// Buttons
 .btn-block {
     display: block;
     white-space: normal;
@@ -83,7 +86,7 @@ a {
     background-color: #2d467b;
 }
 
-// panels
+// Panels
 .panel-default .panel-heading {
     color: #ffffff;
     background-color: #00a699;
@@ -110,21 +113,24 @@ a {
 }
 
 
-// avatar
+// Avatar
 .avatar-small {
     width: 28px;
+    height: 28px;
 }
 .avatar-medium {
     width: 48px;
+    height: 48px;
 }
 .avatar-large {
     width: 68px;
+    height: 68px;
 }
 .avatar-full {
     width: 100%;
 }
 
-//  forms
+// Forms
 .form-group {
     margin-bottom: 25px;
 }
@@ -180,7 +186,7 @@ a {
     color: #00a699;
 }
 
-// sidebar
+// Sidebar
 .sidebar-list {
     padding-left: 0;
     list-style: none;
@@ -204,7 +210,7 @@ a {
     text-decoration: none;
 }
 
-// photo upload
+// Photo Upload
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -231,7 +237,7 @@ a {
     width: 100%;
 }
 
-// Room show
+// Room Show
 .amenities li {
     margin-bottom: 10px;
     font-size: 16px;
@@ -256,7 +262,7 @@ a {
     border: none;
 }
 .form-control.datepicker {
-    color: #00a699;
+    columns: #00a699;
     background-color: white;
     border: 1px solid #00a699;
     text-align: center;
@@ -289,4 +295,15 @@ a {
     font-size: 16px;
     font-weight: 600;
     color: #00a699;
+}
+
+// Home Page
+.discovery-card {
+    background-size: cover;
+    background-position: center;
+    height: 356px;
+}
+.banner {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
